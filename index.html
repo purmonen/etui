@@ -13,7 +13,14 @@
 		<li class="active">Etui</li>
 	</ol>
 	<div class="page-header">
-		<h1><span class="glyphicon glyphicon-fire"></span> Etui <small>visualize</small></h1>
+		<h1><span class="glyphicon glyphicon-fire"></span> Etui <small>visualization</small></h1>
+		<blockquote>
+		<ol>
+			<li>Click on the canvas to select start position</li>
+			<li>Light green area shows where you can move / start</li>
+			<li>Add / remove spikes using alternative mouse button</li>
+		</ol>
+		</blockquote>
 	</div>
 
 <div class="row">
@@ -30,10 +37,11 @@
 				</select>
 			</div>
 			<button id="create-etui-button" class="btn btn-primary">Create</button>
+			<button id="restart-button" class="btn">Restart</button>
 		</form>
 	</div>
 	<div class="col-md-8 col-sm-8 col-lg-8 col-sm-offset-1">
-		<canvas height="300" width="300" id="etui"></canvas>
+		<div id="etui"></div>
 	</div>
 </div>
 
