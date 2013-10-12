@@ -4,24 +4,26 @@
 	<meta charset="utf-8">
 	<title>Master</title>
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container" style="width: 750px;">
-	<ol class="breadcrumb" style="background: none">
-		<li><a href="http://www.kth.se">KTH</a></li>
-		<li><a href="http://www.nada.kth.se/~purmonen/">Sami Purmonen</a></li>
-		<li class="active">Etui</li>
+<div class="container">
+<ol class="breadcrumb">
+	<li><a href="http://www.kth.se">KTH</a></li>
+	<li><a href="http://www.nada.kth.se/~purmonen/">Sami Purmonen</a></li>
+	<li class="active"><span class="glyphicon glyphicon-fire"></span> Etui</li>
+</ol>
+<div class="page-header">
+	<h1><span class="glyphicon glyphicon-fire"></span> Etui <small>visualization</small></h1>
+	<blockquote>
+	<ol>
+		<li>Click on the canvas twice to select start position</li>
+		<li>Click on the chain to undo last action</li>
+		<li>Light green area shows where you can move / start</li>
+		<li>Add / remove spikes using alternative mouse button</li>
 	</ol>
-	<div class="page-header">
-		<h1><span class="glyphicon glyphicon-fire"></span> Etui <small>visualization</small></h1>
-		<blockquote>
-		<ol>
-			<li>Click on the canvas to select start position</li>
-			<li>Light green area shows where you can move / start</li>
-			<li>Add / remove spikes using alternative mouse button</li>
-		</ol>
-		</blockquote>
-	</div>
+	</blockquote>
+</div>
 
 <div class="row">
 	<div class="col-md-3 col-sm-3 col-lg-3">
@@ -36,12 +38,16 @@
 				<select class="form-control" id="spikes-input">
 				</select>
 			</div>
+	
 			<button id="create-etui-button" class="btn btn-primary">Create</button>
-			<button id="restart-button" class="btn">Restart</button>
+			<br><br>
+			<button id="restart-button" class="btn btn-default">Restart</button>
+			<button id="solve-button" class="btn btn-default">Solve</button>
 		</form>
 	</div>
 	<div class="col-md-8 col-sm-8 col-lg-8 col-sm-offset-1">
 		<div id="etui"></div>
+		<p id="info"></p>
 	</div>
 </div>
 
